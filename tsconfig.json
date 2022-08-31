@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+        "target": "ESNext",
+        "module": "CommonJS",
+        "outDir": "./build",
+        "rootDir": "./src",
+        "strict": true,
+        "resolveJsonModule": true,
+        "strictNullChecks": false,
+        "esModuleInterop": true,
+        "moduleResolution": "Node",
+        "declaration": true,
+        "skipLibCheck": false,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "removeComments": true
+    }
+}

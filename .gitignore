@@ -1,0 +1,10 @@
+#     IDE     #
+.idea
+.vscode
+
+#  NOT NEEDS  #
+build
+node_modules
+
+#  IMPORTANT  #
+.env
