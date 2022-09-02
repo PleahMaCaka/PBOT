@@ -9,7 +9,7 @@
         "strictNullChecks": false,
         "esModuleInterop": true,
         "moduleResolution": "Node",
-        "declaration": true,
+        "declaration": false,
         "skipLibCheck": false,
         "experimentalDecorators": true,
         "emitDecoratorMetadata": true,
