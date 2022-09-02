@@ -1,1 +1,1 @@
-worker: pnpm serve
+worker: npm run heroku:start
