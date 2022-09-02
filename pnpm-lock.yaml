@@ -9,6 +9,7 @@ specifiers:
   discordx: ^11.1.9
   dotenv: ^16.0.1
   nodemon: 2.0.19
+  pnpm: ^7.9.5
   reflect-metadata: ^0.1.13
   ts-node: 10.9.1
   typescript: 4.7.4
@@ -25,6 +26,7 @@ devDependencies:
   '@types/got': 9.6.12
   '@types/node': 18.7.13
   nodemon: 2.0.19
+  pnpm: 7.9.5
   ts-node: 10.9.1_57uwcby55h6tzvkj3v5sfcgxoe
   typescript: 4.7.4
 
@@ -705,6 +707,12 @@ packages:
   /picomatch/2.3.1:
     resolution: {integrity: sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA==}
     engines: {node: '>=8.6'}
+    dev: true
+
+  /pnpm/7.9.5:
+    resolution: {integrity: sha512-+r7+PlBIsblqia8eUOUsBp/R+lHmGAm55jyQRt3DWMUI0srVR1aNJhQECfx24L53Ckz9g48mVxQXEniQMWQPmw==}
+    engines: {node: '>=14.6'}
+    hasBin: true
     dev: true
 
   /prepend-http/2.0.0:
