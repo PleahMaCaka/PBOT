@@ -1,5 +1,5 @@
-import { CommandInteraction } from "discord.js";
-import { Discord, Slash } from "discordx";
+import { CommandInteraction } from "discord.js"
+import { Discord, Slash } from "discordx"
 
 @Discord()
 export class Example {
