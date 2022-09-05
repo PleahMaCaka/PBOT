@@ -2,6 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@discordx/importer': ^1.1.10
+  '@discordx/utilities': ^5.0.0
   '@types/got': ^9.6.12
   '@types/node': 18.7.13
   '@vitalets/google-translate-api': ^8.0.0
@@ -15,6 +16,7 @@ specifiers:
 
 dependencies:
   '@discordx/importer': 1.1.10
+  '@discordx/utilities': 5.0.0_a5szhsqdjpz7iuiw5yihdb2ika
   '@vitalets/google-translate-api': 8.0.0
   discord.js: 14.3.0
   discordx: 11.1.9_discord.js@14.3.0
@@ -85,6 +87,18 @@ packages:
     resolution: {integrity: sha512-+vv5QS133O3TDDBvPp+ugQy5ExCFjVTxVn5AwQRgwpKNyXSplarNXA4TzACuiYBnXb6ecwtjfbDLcy/xMjYIoQ==}
     engines: {node: '>=16.0.0', npm: '>=7.0.0'}
     dependencies:
+      tslib: 2.4.0
+    dev: false
+
+  /@discordx/utilities/5.0.0_a5szhsqdjpz7iuiw5yihdb2ika:
+    resolution: {integrity: sha512-7bPBL37Ffd4XZJmzFpsvcYpoq39BsIcy9lrjQtYVH/xti8xU0gw8W59L8DFnuz9DgFqwC9OteQ2Z4oulZEi8lQ==}
+    engines: {node: '>=16.0.0', npm: '>=7.0.0'}
+    peerDependencies:
+      discord.js: '>=14 || ^14.0.0-dev'
+      discordx: '>=10 || ^10.0.0-dev'
+    dependencies:
+      discord.js: 14.3.0
+      discordx: 11.1.9_discord.js@14.3.0
       tslib: 2.4.0
     dev: false
 
