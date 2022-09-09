@@ -9,7 +9,6 @@ import {
 } from "discord.js"
 import { ButtonComponent, Client, Discord, Slash, SlashGroup } from "discordx"
 import 'dotenv/config'
-import { repository } from "../../package.json"
 
 @Discord()
 @SlashGroup({
@@ -90,7 +89,7 @@ export class Information {
 			)
 
 		const githubBtn = new ButtonBuilder()
-			.setURL(repository.url)
+			.setURL("https://github.com/PleahMaCaka/pbot")
 			.setStyle(ButtonStyle.Link)
 			.setLabel("Github")
 

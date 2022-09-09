@@ -1,4 +1,5 @@
-import { ArgsOf, Client, Discord, On } from "discordx"
+import type { ArgsOf } from "discordx"
+import { Client, Discord, On } from "discordx"
 
 @Discord()
 class JoinToDeploy {
