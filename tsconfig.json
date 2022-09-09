@@ -3,7 +3,7 @@
         "target": "ESNext",
         "module": "CommonJS",
         "outDir": "./build",
-        "rootDir": "./src",
+        "rootDir": "./",
         "strict": true,
         "resolveJsonModule": true,
         "strictNullChecks": false,
@@ -14,5 +14,11 @@
         "experimentalDecorators": true,
         "emitDecoratorMetadata": true,
         "removeComments": true
-    }
+    },
+    "include": [
+        "./src/**/*.ts"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
 }

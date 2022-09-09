@@ -3,6 +3,9 @@
     "version": "0.1.0",
     "main": "src/start.ts",
     "packageManager": "pnpm@7.9.5",
+    "repository": {
+        "url": "https://github.com/PleahMaCaka/PBOT"
+    },
     "scripts": {
         "start": "node --loader ts-node/esm/transpile-only src/start.ts",
         "dev": "nodemon --experimental-specifier-resolution=node --exec node --no-warnings=ExperimentalWarning --loader ts-node/esm/transpile-only src/start.ts",
