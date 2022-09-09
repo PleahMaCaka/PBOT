@@ -1,7 +1,8 @@
 {
     "compilerOptions": {
         "target": "ESNext",
-        "module": "CommonJS",
+        "module": "ESNext",
+        "sourceMap": true,
         "outDir": "./build",
         "rootDir": "./",
         "strict": true,
@@ -13,7 +14,7 @@
         "skipLibCheck": false,
         "experimentalDecorators": true,
         "emitDecoratorMetadata": true,
-        "removeComments": true
+        "removeComments": true,
     },
     "include": [
         "./src/**/*.ts"
