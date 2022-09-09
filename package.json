@@ -12,7 +12,7 @@
         "build": "tsc",
         "serve": "pnpm build && node build/start.js",
         "heroku:log": "heroku logs --tail --app pbot-new",
-        "heroku:start": "node build/start.js"
+        "heroku:start": "node build/src/start.js"
     },
     "devDependencies": {
         "@types/got": "^9.6.12",
