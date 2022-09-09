@@ -3,6 +3,11 @@
     "version": "0.1.0",
     "main": "src/start.ts",
     "packageManager": "pnpm@7.9.5",
+    "author": {
+        "name": "PleahMaCaka",
+        "url": "https://github.com/PleahMaCaka/",
+        "email": "PleahMaCaka@gmail.com"
+    },
     "repository": {
         "url": "https://github.com/PleahMaCaka/PBOT"
     },
