@@ -3,6 +3,9 @@ import { IntentsBitField } from "discord.js"
 import { Client } from "discordx"
 import "dotenv/config"
 import "reflect-metadata"
+import { Logger } from "./utils/Logger";
+
+export const DEBUG = !!(process.env.DEBUG == "true" || "True" || "TRUE") // none = false
 
 export const client = new Client({
 	botGuilds: [client => client.guilds.cache.map(guild => guild.id)],
@@ -25,7 +28,7 @@ export const client = new Client({
 		IntentsBitField.Flags.MessageContent,
 		IntentsBitField.Flags.GuildScheduledEvents
 	],
-	silent: false,
+	silent: !DEBUG,
 })
 
 
@@ -36,6 +39,8 @@ async function run() {
 	if (!process.env.TOKEN)
 		throw new Error("Cannot find TOKEN in your environment")
 
+	if (DEBUG) Logger.log("DEBUG", "!!!DEBUG MODE IS ENABLED!!!")
+	
 	await client.login(process.env.TOKEN)
 }
 
