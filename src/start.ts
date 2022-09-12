@@ -3,7 +3,7 @@ import { IntentsBitField } from "discord.js"
 import { Client } from "discordx"
 import "dotenv/config"
 import "reflect-metadata"
-import { Logger } from "./utils/Logger";
+import { Logger } from "./utils/Logger.js"
 
 export const DEBUG = !!(process.env.DEBUG == "true" || "True" || "TRUE") // none = false
 
@@ -40,7 +40,7 @@ async function run() {
 		throw new Error("Cannot find TOKEN in your environment")
 
 	if (DEBUG) Logger.log("DEBUG", "!!!DEBUG MODE IS ENABLED!!!")
-	
+
 	await client.login(process.env.TOKEN)
 }
 

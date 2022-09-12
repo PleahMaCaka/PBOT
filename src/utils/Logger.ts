@@ -1,5 +1,5 @@
 import "dotenv/config"
-import { DEBUG } from "../start"
+import { DEBUG } from "../start.js"
 
 /**
  * Original Source:
