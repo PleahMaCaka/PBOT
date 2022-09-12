@@ -21,6 +21,7 @@
     },
     "packageManager": "pnpm@7.9.5",
     "dependencies": {
+        "@discordjs/opus": "^0.8.0",
         "@discordjs/voice": "^0.11.0",
         "@discordx/importer": "^1.1.10",
         "@discordx/music": "^4.1.0",
