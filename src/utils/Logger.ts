@@ -95,4 +95,23 @@ export class Logger {
 		return
 	}
 
+	public static info(...content: string | any): void {
+		return this.infoLog(content)
+	}
+
+	public static warn(...content: string | any): void {
+		return this.warnLog(content)
+	}
+
+	public static error(...content: string | any): void {
+		return this.errorLog(content)
+	}
+
+	public static debug(...content: string | any): void {
+		return this.debugLog(content)
+	}
+
+	public static critical(...content: string | any): void {
+		return this.criticalLog(content)
+	}
 }
