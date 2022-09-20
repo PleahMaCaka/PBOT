@@ -2,7 +2,6 @@
     "name": "pbot",
     "version": "0.1.0",
     "main": "src/start.ts",
-    "type": "module",
     "author": {
         "name": "PleahMaCaka",
         "url": "https://github.com/PleahMaCaka/",

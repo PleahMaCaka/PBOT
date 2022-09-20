@@ -1,7 +1,6 @@
 import { ApplicationCommandType, EmbedBuilder, MessageContextMenuCommandInteraction } from "discord.js"
 import { ContextMenu, Discord, Guild } from "discordx"
 import 'dotenv/config'
-import * as ts from "typescript"
 import { inspect } from "util";
 
 @Discord()
@@ -54,7 +53,7 @@ class Evaluate {
 				result = await eval(msg)
 				break
 			case "ts":
-				result = await eval(ts.transpile(msg))
+				result = await eval(require("typescript").transpile(msg))
 				break
 			default:
 				return await interaction.editReply("Not available language")

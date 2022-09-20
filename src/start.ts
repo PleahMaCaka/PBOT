@@ -1,9 +1,9 @@
-import { dirname, importx } from "@discordx/importer"
+import { importx } from "@discordx/importer"
 import { IntentsBitField } from "discord.js"
 import { Client } from "discordx"
 import "dotenv/config"
 import "reflect-metadata"
-import { Logger } from "./utils/Logger.js"
+import { Logger } from "./utils/Logger"
 
 export const DEBUG = !!(process.env.DEBUG == "true" || "True" || "TRUE") // none = false
 
@@ -33,8 +33,8 @@ export const client = new Client({
 
 
 async function run() {
-	await importx(dirname(import.meta.url) + "/{events,commands}/**/*.{ts,js}");
-	// await importx(__dirname + "/{events,commands}/**/*.{ts,js}")
+	// await importx(dirname(import.meta.url) + "/{events,commands}/**/*.{ts,js}");
+	await importx(__dirname + "/{events,commands}/**/*.{ts,js}")
 
 	if (!process.env.TOKEN)
 		throw new Error("Cannot find TOKEN in your environment")
@@ -44,4 +44,6 @@ async function run() {
 	await client.login(process.env.TOKEN)
 }
 
-await run()
+(async () => {
+	await run()
+})()

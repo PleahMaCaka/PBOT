@@ -10,7 +10,7 @@ import {
 	MessageActionRowComponentBuilder
 } from "discord.js";
 import { ContextMenu, Discord, Guard } from "discordx";
-import { Emoji } from "../../utils/Emoji.js";
+import { Emoji } from "../../utils/Emoji";
 
 @Discord()
 @Guard(RateLimit(

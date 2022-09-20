@@ -2,24 +2,27 @@ import { RateLimit, TIME_UNIT } from "@discordx/utilities"
 import googleTranslateApi from "@vitalets/google-translate-api"
 import { ApplicationCommandType, EmbedBuilder, MessageContextMenuCommandInteraction } from "discord.js"
 import { ContextMenu, Discord, Guard } from "discordx"
-import { Emoji } from "../../utils/Emoji.js"
+import { Emoji } from "../../utils/Emoji"
 
 @Discord()
-@Guard(RateLimit(TIME_UNIT.seconds, 5))
+@Guard(RateLimit(TIME_UNIT.seconds, 5,
+	{ ephemeral: true, message: "5초에 한번만 사용할 수 있습니다." }
+))
 class Translator {
 
 	@ContextMenu({
-		name: "자동번역",
-		type: ApplicationCommandType.Message
+		name: "AutoTranslate",
+		type: ApplicationCommandType.Message,
+		nameLocalizations: {
+			"ko": "자동번역",
+			"en-US": "AutoTranslate"
+		},
 	})
 	private async translate(
 		interaction: MessageContextMenuCommandInteraction
 	) {
 		await interaction.deferReply({ ephemeral: false })
 
-		//////////////////////////////
-		// Get Message Content
-		////////////////////
 		const msg: string = await interaction.channel.messages.fetch(interaction.targetId).then(msg => msg.content)
 
 		// msg not found
